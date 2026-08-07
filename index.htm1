@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chatman Market Radar</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1220;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #9ca3af;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: #172033;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 14px;
+    }
+
+    .value {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .up {
+      color: #22c55e;
+    }
+
+    .down {
+      color: #ef4444;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>📡 Chatman Market Radar</h1>
+    <div class="subtitle">
+      スーパーボーイ専用・マーケット監視システム
+    </div>
+
+    <div class="card">
+      <h2>🇯🇵 日経平均</h2>
+      <div class="value">-- 円</div>
+    </div>
+
+    <div class="card">
+      <h2>🇺🇸 NASDAQ</h2>
+      <div class="value">--</div>
+    </div>
+
+    <div class="card">
+      <h2>💵 USD / JPY</h2>
+      <div class="value">-- 円</div>
+    </div>
+
+    <div class="card">
+      <h2>📊 売買代金</h2>
+      <div class="value">-- 兆円</div>
+    </div>
+
+    <div class="card">
+      <h2>💰 売買代金 ÷ 出来高</h2>
+      <div class="value">-- 円 / 株</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
