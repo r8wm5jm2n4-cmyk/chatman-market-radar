@@ -64,7 +64,7 @@
 
     <div class="card">
       <h2>🇯🇵 日経平均</h2>
-      <div class="value">-- 円</div>
+      <div class="value"　id="nikkei">-- 円</div>
     </div>
 
     <div class="card">
@@ -88,6 +88,15 @@
     </div>
 
   </div>
+<script>
 
+
+async function updateNikkei(){
+const response = await fetch("https://nikkei.feargreedchart.com/api/?action=nikkei");
+const data = await response.json();
+console.log(data);
+}
+updataNikkei();
+</script>
 </body>
 </html>
