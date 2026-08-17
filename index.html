@@ -95,6 +95,8 @@ async function updateNikkei(){
 const response = await fetch("https://nikkei.feargreedchart.com/api/?action=nikkei");
 const data = await response.json();
 console.log(data);
+document.getElementById("nikkei").textContent = data.nikkei.level.toLocaleString("ja-JP", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + " 円";
+  ｝
 }
 updateNikkei();
 </script>
