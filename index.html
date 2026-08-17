@@ -78,7 +78,7 @@
 
     <div class="card">
       <h2>💵 USD / JPY</h2>
-      <div class="value">-- 円</div>
+      <div class="value" id="usdjpy">-- 円</div>
     </div>
 
     <div class="card">
@@ -101,6 +101,7 @@
     async function updateNikkei() {
       const nikkeiElement = document.getElementById("nikkei");
       const statusElement = document.getElementById("status");
+  　　const usdJpyElement = document.getElementById("usdjpy");
 
       try {
         const response = await fetch(
@@ -134,8 +135,18 @@
           "日経平均データの取得に失敗しました";
       }
     }
-
+async function updateUsdJpy() {
+  try {
+    const response = await fetch("https://api.frankfurter.app/latest?from=USD&to=JPY");
+    const data = await response.json();
+    const rate = Number(data.rates.JPY); 
+    usdJpyElement.textContent = rate.toFixed(2) + " 円";
+   } catch (error) {
+    console.error(error);
+     } 
+}  
     updateNikkei();
+updateUsdJpy();    
   </script>
 
 </body>
