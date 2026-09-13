@@ -11,6 +11,6 @@ jobs:
 　　　　　　- uses: actions/checkout@v4
 　　　　　　- name: Update market data
 　　　　　　　　run: |
-　　　　　　　　　　echo "Market data update started"
-　　　　　　　　　　date
-　　　　　　　　　　echo "Market data update finished"
+　　　　　　　　　　　　echo "Market data update started"
+　　　　　　　　　　　　date
+　　　　　　　　　　　　echo "Market data update finished"
