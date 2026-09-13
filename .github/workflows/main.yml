@@ -1,0 +1,16 @@
+
+name: Market Radar Update
+
+on:
+　　  workflow_dispatch:
+
+jobs:
+　　update:
+　　　　runs-on: ubuntu-latest
+　　　　steps:
+　　　　　　- uses: actions/checkout@v4
+　　　　　　- name: Update market data
+　　　　　　　　run: |
+　　　　　　　　　　echo "Market data update started"
+　　　　　　　　　　date
+　　　　　　　　　　echo "Market data update finished"
